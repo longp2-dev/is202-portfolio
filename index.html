@@ -3,41 +3,134 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <meta name="description" content="Welcome to my personal portfolio. Explore my background, projects, skills, and contact information.">
+    <title>Home | My Personal Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      .hero {
+        background: linear-gradient(135deg, #0d6efd, #084298);
+      }
+
+      .section-icon {
+        width: 3rem;
+        height: 3rem;
+      }
+    </style>
   </head>
   <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutme.html">About me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="skillresume.html">Skills & Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        
-      </span>
-    </div>
-  </div>
-</nav>
-    <h1>Hello, Welcome to My Personal Portfolio Website!</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="home.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutme.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skillresume.html">Skills &amp; Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <header class="hero text-white py-5">
+        <div class="container py-5">
+          <div class="row align-items-center justify-content-center text-center">
+            <div class="col-lg-9 col-xl-8">
+              <span class="badge rounded-pill text-bg-light text-primary px-3 py-2 mb-4">MY PERSONAL PORTFOLIO</span>
+              <h1 class="display-3 fw-bold mb-4">Hello, Welcome to My Personal Portfolio Website!</h1>
+              <p class="lead text-white-50 mb-4">
+                Get to know me, explore projects I’ve worked on, and learn about my skills and experience.
+              </p>
+              <div class="d-flex justify-content-center flex-wrap gap-3">
+                <a class="btn btn-light btn-lg fw-semibold" href="portfolio.html">Explore My Portfolio <span aria-hidden="true">&rarr;</span></a>
+                <a class="btn btn-outline-light btn-lg" href="aboutme.html">About Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="container py-5" aria-labelledby="explore-heading">
+        <div class="text-center mb-4">
+          <p class="text-primary text-uppercase fw-bold small mb-2">Explore</p>
+          <h2 id="explore-heading" class="display-6 fw-bold">A little more about my portfolio</h2>
+          <p class="text-secondary mb-0">Choose a section to learn more.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <a class="card h-100 border-0 shadow-sm text-decoration-none text-body" href="aboutme.html">
+              <div class="card-body p-4">
+                <div class="section-icon rounded-3 bg-primary-subtle text-primary d-flex align-items-center justify-content-center fs-4 fw-bold mb-3" aria-hidden="true">01</div>
+                <h3 class="h5 card-title fw-bold">About Me</h3>
+                <p class="card-text text-secondary">Learn about my background and learning journey.</p>
+                <span class="text-primary fw-semibold">Get to know me &rarr;</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <a class="card h-100 border-0 shadow-sm text-decoration-none text-body" href="portfolio.html">
+              <div class="card-body p-4">
+                <div class="section-icon rounded-3 bg-success-subtle text-success d-flex align-items-center justify-content-center fs-4 fw-bold mb-3" aria-hidden="true">02</div>
+                <h3 class="h5 card-title fw-bold">Portfolio</h3>
+                <p class="card-text text-secondary">Browse my system analysis projects and work.</p>
+                <span class="text-primary fw-semibold">See my projects &rarr;</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <a class="card h-100 border-0 shadow-sm text-decoration-none text-body" href="skillresume.html">
+              <div class="card-body p-4">
+                <div class="section-icon rounded-3 bg-warning-subtle text-warning-emphasis d-flex align-items-center justify-content-center fs-4 fw-bold mb-3" aria-hidden="true">03</div>
+                <h3 class="h5 card-title fw-bold">Skills &amp; Resume</h3>
+                <p class="card-text text-secondary">Review my technical skills and project experience.</p>
+                <span class="text-primary fw-semibold">View my skills &rarr;</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <a class="card h-100 border-0 shadow-sm text-decoration-none text-body" href="contact.html">
+              <div class="card-body p-4">
+                <div class="section-icon rounded-3 bg-danger-subtle text-danger d-flex align-items-center justify-content-center fs-4 fw-bold mb-3" aria-hidden="true">04</div>
+                <h3 class="h5 card-title fw-bold">Contact</h3>
+                <p class="card-text text-secondary">Find my contact information and get in touch.</p>
+                <span class="text-primary fw-semibold">Contact me &rarr;</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-light py-5">
+        <div class="container text-center">
+          <h2 class="h2 fw-bold">Thanks for stopping by!</h2>
+          <p class="lead text-secondary mb-4">Take a look at the projects I’ve put together.</p>
+          <a class="btn btn-primary btn-lg" href="portfolio.html">View My Projects</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white-50 py-4">
+      <div class="container text-center">
+        <small>&copy; 2026 My Personal Portfolio</small>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
